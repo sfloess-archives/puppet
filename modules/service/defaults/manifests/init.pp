@@ -14,4 +14,71 @@ class defaults {
 
     $externalRelayHost = "smtp-server.nc.rr.com"
     $internalRelayHost = "${adminHost}"
+
+    // ----------------------------------------------------
+
+    $host_gateway = {
+        subIp => "1",
+        name  => "gateway",
+    }
+
+    $host_amy = {
+        subIp => "2",
+        name  => "amy",
+    }
+
+    $host_hale = {
+        subIp => "3"
+        name  => "hale",
+    }
+
+    $host_playstation = {
+        subIp => "4",
+        name  => "playstation",
+    }
+
+    $host_itouch = {
+        subIp => "5",
+        name  => "itouch",
+    }
+
+    $host_psp = {
+        subIp => "6",
+        name  => "psp",
+    }
+
+    $host_flossy = {
+        subIp => "7",
+        name  => "flossy",
+    }
+
+    $host_adminserver = {
+        subIp => "253",
+        name  => "adminserver",
+        cname => [
+            "fileserver",
+            "fontserver",
+            "mailserver",
+            "puppet",
+            "webserver",
+            "www"
+        ]
+    }
+
+    $host_accesspoint = {
+        subIp => "254",
+        name  => "accesspoint",
+    }
+
+    $dns_defaultHosts = [
+        $host_gateway,
+        $host_amy,
+        $host_hale,
+        $host_playstation,
+        $host_itouch,
+        $host_psp,
+        $host_flossy,
+        $host_adminserver,
+        $host_accesspoint,
+    ]
 }
