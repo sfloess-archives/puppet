@@ -1,8 +1,8 @@
-class defaults {
+class overrides::variables {
 
     # ----------------------------------------------------
 
-    $service_defaultExternalDomain = 'flossware.homelinux.org'
+    $common_defaultExternalDomain = 'flossware.homelinux.org'
     $service_defaultAdminHost      = 'adminserver'
     $service_defaultAdminIp        = "${baseIp}.253"
     $service_defaultAdminFqdn      = "${adminHost}.${internalDomain}"
