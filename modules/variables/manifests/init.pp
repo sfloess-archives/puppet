@@ -2,20 +2,20 @@ class variables {
 
     # ----------------------------------------------------
 
-    $common_defaultExternalDomain = 'flossware.homelinux.org'
-    $common_defaultAdminHost      = 'adminserver'
-    $common_defaultAdminIp        = "${baseIp}.253"
-    $common_defaultAdminFqdn      = "${adminHost}.${internalDomain}"
-    $common_defaultGatewayIp      = "${baseIp}.1"
+    $common_externalDomain = 'flossware.homelinux.org'
+    $common_masterHost      = 'adminserver'
+    $common_masterIp        = "${baseIp}.253"
+    $common_masterFqdn      = "${adminHost}.${internalDomain}"
+    $common_masterayIp      = "${baseIp}.1"
 
     # ----------------------------------------------------
 
-    $postfix_defaultExternalRelayHost = "smtp-server.nc.rr.com"
-    $postfix_defaultInternalRelayHost = "${adminHost}"
+    $postfix_externalRelayHost = "smtp-server.nc.rr.com"
+    $postfix_internalRelayHost = "${adminHost}"
 
     # ----------------------------------------------------
 
-    $dns_defaultHosts = [
+    $dns_hosts = [
         {
             subIp => "1",
             name  => "gateway",
